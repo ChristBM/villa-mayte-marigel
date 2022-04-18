@@ -1,0 +1,79 @@
+.hamburger_cont {
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-style: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  z-index: 100;
+  background: linear-gradient(180deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+  cursor: pointer;
+  transition: transform 200ms ease-out;
+  opacity: 0.5;
+}
+
+.hamburger:hover {
+  opacity: 1;
+}
+
+.hamburger__elem_top {
+  width: 26px;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  transform: translateY(0px) translateX(7px);
+  background-color: #fff;
+  transition: transform 200ms linear;
+}
+
+.hamburger__elem_middle {
+  width: 26px;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  transform: translateY(8px) translateX(7px);
+  opacity: 1;
+  background-color: #fff;
+  transition: opacity 200ms linear;
+}
+
+.hamburger__elem_bottom {
+  width: 26px;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  transform: translateY(16px) translateX(7px);
+  background-color: #fff;
+  transition: transform 200ms linear;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+  transition: transform 200ms ease-in;
+}
+
+.x_top {
+  transform: translateX(7px) translateY(7px) rotateZ(-45deg);
+  transition: transform 200ms linear;
+}
+
+.x_middle {
+  transform: translateY(7px) scale(0);
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.x_bottom {
+  transform: translateX(7px) translateY(7px) rotateZ(45deg);
+  transition: transform 200ms linear;
+}

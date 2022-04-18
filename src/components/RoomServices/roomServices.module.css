@@ -1,0 +1,26 @@
+.services {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.li {
+  display: flex;
+  /* width: 100%; */
+  max-width: 350px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.text {
+  width: 200px;
+  font-size: 1.8rem;
+
+  font-weight: 500;
+  color: #2E2E2E;
+}

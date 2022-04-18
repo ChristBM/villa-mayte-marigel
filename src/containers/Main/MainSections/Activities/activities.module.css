@@ -1,0 +1,121 @@
+.activities {
+  width: 100%;
+  height: auto;
+  padding: 0px 10px 0px 10px;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* ways */
+
+.subtitle {
+  padding-block-end: 30px;
+  align-self: center;
+  font-size: 1.8rem;
+  font-family: 'Signika Negative';
+  font-weight: 500;
+  color: #F6F6F6;
+}
+
+.way_cont, .places {
+  display: flex;
+  padding-block-end: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ways {
+  display: grid;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.img_form1 {
+  align-self: flex-start;
+  max-width: 200px;
+  position: relative;
+  text-align: center;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  backdrop-filter: blur(10px);
+}
+
+.img_form1:hover {
+  animation: form1 2s linear infinite;
+}
+
+@keyframes form1 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(10px);
+  }
+  75% {
+    transform: translate(5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.img_form2 {
+  align-self: flex-end;
+  max-width: 200px;
+  position: relative;
+  text-align: center;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.img_form2:hover {
+  animation: form2 2s linear infinite;
+}
+
+@keyframes form2 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(5px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  75% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.way_name {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 390px) {
+  .way_name {
+    font-size: 1.8rem;
+  }
+}

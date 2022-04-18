@@ -1,0 +1,30 @@
+.rentroom {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-block-end: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  max-width: 60ch;
+  padding: 0 0px;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2E2E2E;
+}
+
+.signatures {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px 10px 0px 10px;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 10px;
+}

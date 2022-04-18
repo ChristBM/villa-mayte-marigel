@@ -1,0 +1,18 @@
+.serv_separator {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-block-end: 30px;
+  transform: translateY(-101px) scaleY(0.5);
+}
+
+.serv_separator_bottom {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  bottom: -1px;
+  left: 0;
+  transform: rotate(180deg);
+}

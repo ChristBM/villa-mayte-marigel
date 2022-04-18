@@ -1,0 +1,46 @@
+/* #2E2E2E */
+
+.title_cont {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: 'Signika Negative';
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(180deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+  background-clip: text;
+  color: transparent;
+  animation: bg 10000ms ease-in-out infinite;
+}
+
+@keyframes bg {
+  0% {
+    color: transparent;
+  }
+  30% {
+    color: #6700af;
+  }
+  60% {
+    color: #f7001f;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-family: 'Signika Negative';
+  font-weight: 500;
+  color: #2E2E2E;
+}

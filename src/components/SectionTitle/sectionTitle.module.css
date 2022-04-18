@@ -1,0 +1,22 @@
+/* #2E2E2E */
+
+.title_cont {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-block-end: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.li_underline {
+  display: block;
+  width: 100px;
+  height: 3px;
+  padding-block-start: 2px;
+  border-radius: 5px;
+  background: linear-gradient(225deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+  transition: transform 200ms ease-out;
+}

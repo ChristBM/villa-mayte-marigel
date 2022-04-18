@@ -1,0 +1,67 @@
+.lang_btn {
+  display: flex;
+  width: 122px;
+  height: 44px;
+  padding-inline: 5px;
+  position: relative;
+  border-style: none;
+  border: 1px solid #FEEBD1;
+  border-radius: 20px;
+  outline-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.164);
+  background: radial-gradient(circle at -10% 80%, #f6f6f6, #f6f6f5, #f7f5f3, #f8f4ef, #f9f3eb, #faf1e6, #fbf0e1, #fceedc, #fdedd8, #fdecd4, #feebd2, #feebd1);
+  user-select: none;
+}
+
+.circle {
+  display: flex;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+  transform: translateX(1px);
+  transition: transform 200ms ease;
+}
+
+.circle_en {
+  transform: translateX(-31px);
+  transition: transform 200ms ease;
+}
+
+.circle_fr {
+  transform: translateX(31px);
+  transition: transform 200ms ease;
+}
+
+.label {
+  text-align: center;
+  font-weight: 400;
+  line-height: calc(1.6rem * 1.6);
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  color: #030303;
+  cursor: pointer;
+}
+
+.label_en,
+.label_es,
+.label_fr {
+  z-index: 2;
+  line-height: calc(1rem * 1.6);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+.input {
+  appearance: none;
+}
+
+

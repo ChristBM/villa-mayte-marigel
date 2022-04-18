@@ -1,0 +1,36 @@
+.layout {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  background-attachment: fixed;
+}
+
+.aside {
+  display: flex;
+  width: 100%;
+  height: auto;
+  bottom: 10px;
+  z-index: 100;
+  justify-content: center;
+}
+
+.main {
+  transform: translateY(-10px);
+  z-index: 5;
+}
+
+/* .footer {
+
+} */
+
+@media screen and ( min-width: 1024px ) {
+  .aside {
+    display: none;
+  }
+}
