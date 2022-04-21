@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const menuMobileSlice = createSlice({
-	name: 'manuMobile',
+	name: 'menuMobile',
 	initialState,
 	reducers: {
 		toggleMenu: state => {

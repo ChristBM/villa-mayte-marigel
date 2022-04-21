@@ -1,5 +1,6 @@
 /** @format */
 
+import { GoUpArrow, Options, Whatsapp } from '@components/index'
 import { MenuMobile } from '@containers/index'
 import Head from 'next/head'
 import styles from './homeLayout.module.css'
@@ -42,6 +43,12 @@ export function HomeLayout({
 			</aside>
 
 			<main className={styles.main}>{children}</main>
+
+			<aside className={styles.options_aside}>
+				<Options />
+				<Whatsapp />
+				<GoUpArrow />
+			</aside>
 
 			<footer className={styles.footer}>{renderFooter()}</footer>
 		</div>

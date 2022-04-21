@@ -3,11 +3,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import menuMobileReducer from '@features/menuMobile/menuMobileSlice'
 import languageReducer from '@features/language/languageSlice'
+import optionReducer from '@features/options/optionSlice'
 
 export const store = configureStore({
 	reducer: {
 		menuMobile: menuMobileReducer,
 		language: languageReducer,
+		options: optionReducer,
 	},
 })
 

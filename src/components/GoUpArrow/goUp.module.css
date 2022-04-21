@@ -1,0 +1,24 @@
+.go_up {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-style: none;
+  border-radius: 50%;
+  position: fixed;
+  right: 5px;
+  top: 70vh;
+  z-index: 12;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  background: linear-gradient(180deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.109);
+  transform: translateX(50px) scale(0.1);
+  transition: transform 300ms linear;
+}
+
+.arrow_show {
+  transform: translateX(0px) scale(1);
+  transition: transform 400ms linear;
+}

@@ -107,12 +107,12 @@ export function NavHeader(): JSX.Element {
 				</li>
 
 				<li className={styles.navheader__li}>
-					<Link href='/login'>
-						<div className={styles.ancor}>
+					<Link href={'/login'} passHref>
+						<a href={'/login'} className={styles.ancor}>
 							{language.es && 'Entrar'}
 							{language.en && 'Login'}
 							{language.fr && 'Connexion'}
-						</div>
+						</a>
 					</Link>
 					<span
 						className={`${styles.li_underline} ${

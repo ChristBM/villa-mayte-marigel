@@ -20,6 +20,15 @@
   justify-content: center;
 }
 
+.options_aside {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  z-index: 10;
+}
+
 .main {
   transform: translateY(-10px);
   z-index: 5;

@@ -1,3 +1,9 @@
+.testimonials_section{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
 .test_mobile {
   display: flex;
   width: 100%;
@@ -42,4 +48,12 @@
   .test_desktop {
     display: flex;
   }
+}
+
+.test_bottom_sep {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(101px) rotate(180deg) scaleY(1);
 }

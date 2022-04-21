@@ -1,0 +1,27 @@
+.options {
+  display: flex;
+  width: 25px;
+  height: 40px;
+  border-style: none;
+  border-radius: 15px 0 0 15px;
+  justify-content: center;
+  align-items: center;
+  /* background: radial-gradient(circle at 0% 50%, #f6f6f6, #f7f4f1, #f9f3eb, #faf1e6, #fbf0e1, #fceedc, #fdedd6, #feebd1); */
+  background: linear-gradient(180deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.109);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.options:hover {
+  opacity: 1;
+}
+
+.arrow {
+  transform: rotate(0deg);
+  transition: transform 200ms linear;
+}
+.arrow_lft {
+  transform: rotate(180deg);
+  transition: transform 100ms linear;
+}

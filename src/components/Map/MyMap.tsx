@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Map, ZoomControl, Overlay } from 'pigeon-maps'
-import { stamenTerrain } from 'pigeon-maps/providers'
+import { osm } from 'pigeon-maps/providers'
 import overlay from '@public/icons/logo.svg'
 
 interface centerInterface {
@@ -12,7 +12,7 @@ interface centerInterface {
 }
 
 const InitialState: centerInterface = {
-	center: [22.611583760513938, -83.71149149872232],
+	center: [22.611655, -83.711555],
 	zoom: 9,
 }
 
@@ -22,13 +22,13 @@ export function MyMap(): JSX.Element {
 	return (
 		<div className='map_cont'>
 			<Map
-				provider={stamenTerrain}
+				provider={osm}
 				height={300}
 				center={state.center}
 				zoom={state.zoom}
 				onBoundsChanged={({ center, zoom }) => setState({ zoom: zoom, center: center })}
 			>
-				<Overlay anchor={[22.611583760513938, -83.71149149872232]} offset={[20, 10]}>
+				<Overlay anchor={[22.611655, -83.711555]} offset={[20, 10]}>
 					<Image
 						src={overlay}
 						width={50}

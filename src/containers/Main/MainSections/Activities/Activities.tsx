@@ -8,7 +8,7 @@ import caballo from '@public/services/caballo.jpg'
 import bici from '@public/services/bicicleta.jpg'
 import { Fragment } from 'react'
 import { useAppSelector } from '@app/hooks'
-import { HeaderBtn, PlaceSlide, SectionTitle } from '@components/index'
+import { HeaderBtn, PlaceSlide, SectionTitle, SepTopBlack } from '@components/index'
 import taxi from '@public/services/taxi.jpg'
 
 export function Activities(): JSX.Element {
@@ -108,6 +108,10 @@ export function Activities(): JSX.Element {
 						: ''
 				}
 			/>
+
+			<div className={styles.activities_bottom_sep} >
+				<SepTopBlack />
+			</div>
 		</Fragment>
 	)
 }

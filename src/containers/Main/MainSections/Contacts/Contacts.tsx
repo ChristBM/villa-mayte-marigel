@@ -7,7 +7,7 @@ import { FaMapMarkedAlt, FaArrowRight } from 'react-icons/fa'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { FcHome, FcPhone, FcPhoneAndroid, FcAddressBook } from 'react-icons/fc'
 import { useAppSelector } from '@app/hooks'
-import { MyMap, SectionTitle, SepTopWhite } from '@components/index'
+import { MyMap, SectionTitle } from '@components/index'
 import imgWebArr from './imgWebArr'
 import styles from './contacts.module.css'
 
@@ -16,10 +16,6 @@ export function Contacts(): JSX.Element {
 
 	return (
 		<Fragment>
-			<div className={styles.contacts_sep}>
-				<SepTopWhite />
-			</div>
-
 			{language.es && <SectionTitle title={'Contactos'} />}
 			{language.en && <SectionTitle title={'Contacts'} />}
 			{language.fr && <SectionTitle title={'Contacts'} />}
