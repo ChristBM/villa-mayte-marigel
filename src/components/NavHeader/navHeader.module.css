@@ -17,10 +17,20 @@
 
 .navheader__li {
   width: auto;
-  color: #000;
+  height: 20px;
+  position: relative;
+  color: #2E2E2E;
   font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.li_icon {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .li_underline {
@@ -46,4 +56,23 @@
 
 .ancor {
   text-decoration: none;
+}
+
+@media screen and (min-width: 440px) and (max-width: 1023px) {
+  .navheader__list {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .navheader__list {
+      justify-content: center;
+      gap: 60px;
+    }
+  .li_icon {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+  }
 }

@@ -18,9 +18,9 @@ export function Welcome(): JSX.Element {
 			{language.en && <SectionTitle title={welcome_txt.en.sec_title} />}
 			{language.fr && <SectionTitle title={welcome_txt.fr.sec_title} />}
 
-			<div className={styles.rentroom}>
+			<section className={styles.rentroom}>
 				<RentRoom />
-			</div>
+			</section>
 
 			<article className={styles.article}>
 				{language.es && <p>{welcome_txt.es.article[0]}</p>}
@@ -36,10 +36,12 @@ export function Welcome(): JSX.Element {
 				{language.fr && <p>{welcome_txt.fr.article[2]}</p>}
 			</article>
 
-			<div className={styles.signatures}>
-				<Image src={sigA} alt='' width={50} height={50} />
-				<Image src={sigB} alt='' width={50} height={50} />
-			</div>
+			<section className={styles.signatures}>
+				<div className={styles.signatures_cont}>
+					<Image src={sigA} alt='' width={50} height={50} />
+					<Image src={sigB} alt='' width={50} height={50} />
+				</div>
+			</section>
 		</Fragment>
 	)
 }

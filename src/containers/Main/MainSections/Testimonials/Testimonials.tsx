@@ -1,6 +1,5 @@
 /** @format */
 
-import { Fragment } from 'react'
 import { useAppSelector } from '@app/hooks'
 import { SectionTitle, SepTopWhite, TestimonialSlice } from '@components/index'
 import styles from './testimonials.module.css'

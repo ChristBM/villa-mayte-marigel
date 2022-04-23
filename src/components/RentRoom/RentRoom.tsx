@@ -10,16 +10,14 @@ import img3 from '@public/room_bienvenida/3.webp'
 import img4 from '@public/room_bienvenida/4.webp'
 import img5 from '@public/room_bienvenida/5.webp'
 
-// Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/effect-creative'
 
-// import './styles.css'
-
-// import required modules
 import SwiperCore, { EffectCreative, Keyboard, Autoplay, A11y } from 'swiper'
 
 SwiperCore.use([EffectCreative, Keyboard, Autoplay])
+
+import styles from './rentRoom.module.css'
 
 export function RentRoom(): JSX.Element {
 	return (
@@ -49,7 +47,7 @@ export function RentRoom(): JSX.Element {
 				modules={[EffectCreative, A11y]}
 				keyboard={{ enabled: true }}
 				autoplay={{ delay: 5000, disableOnInteraction: true }}
-				className='mySwiper4'
+				className={styles.swiper_rentroom}
 			>
 				<SwiperSlide>
 					<Image src={img1} alt='' loading='lazy' />

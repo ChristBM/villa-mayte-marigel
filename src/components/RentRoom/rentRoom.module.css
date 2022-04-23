@@ -1,0 +1,9 @@
+.swiper_rentroom {
+  display: flex;
+  max-width: 720px;
+  border: 5px #f7001f;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -3px -3px 0px #f7002176, 3px 3px 0px #6600afd1;
+  background: linear-gradient(330deg, #320ab8, #4400b6, #6700af, #8c00a3, #ae0092, #cb007b, #e10062, #ef004a, #f50033, #f7001f, #f6000b, #f60000);
+}

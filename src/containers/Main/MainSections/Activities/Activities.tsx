@@ -3,13 +3,13 @@
 import Image from 'next/image'
 import styles from './activities.module.css'
 
-import senderismo from '@public/services/senderismo.jpg'
-import caballo from '@public/services/caballo.jpg'
-import bici from '@public/services/bicicleta.jpg'
+import senderismo from '@public/activities/senderismo.jpg'
+import caballo from '@public/activities/caballo.jpg'
+import bici from '@public/activities/bicicleta.jpg'
 import { Fragment } from 'react'
 import { useAppSelector } from '@app/hooks'
 import { HeaderBtn, PlaceSlide, SectionTitle, SepTopBlack } from '@components/index'
-import taxi from '@public/services/taxi.jpg'
+import taxi from '@public/activities/taxi.jpg'
 
 export function Activities(): JSX.Element {
 	let language = useAppSelector(state => state.language)
@@ -109,7 +109,7 @@ export function Activities(): JSX.Element {
 				}
 			/>
 
-			<div className={styles.activities_bottom_sep} >
+			<div className={styles.activities_bottom_sep}>
 				<SepTopBlack />
 			</div>
 		</Fragment>

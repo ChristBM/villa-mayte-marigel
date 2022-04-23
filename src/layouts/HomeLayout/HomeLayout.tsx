@@ -1,7 +1,7 @@
 /** @format */
 
-import { GoUpArrow, Options, Whatsapp } from '@components/index'
-import { MenuMobile } from '@containers/index'
+import { GoUpArrow, Options, Whatsapp, GoDownArrow } from '@components/index'
+import { MenuDesktop, MenuMobile } from '@containers/index'
 import Head from 'next/head'
 import styles from './homeLayout.module.css'
 
@@ -35,6 +35,10 @@ export function HomeLayout({
 				<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
 			</Head>
 
+			<section className={styles.header_desktop}>
+				<MenuDesktop />
+			</section>
+
 			<header className={styles.header}>{renderHeader()}</header>
 
 			<aside className={styles.aside}>
@@ -48,6 +52,7 @@ export function HomeLayout({
 				<Options />
 				<Whatsapp />
 				<GoUpArrow />
+				<GoDownArrow />
 			</aside>
 
 			<footer className={styles.footer}>{renderFooter()}</footer>

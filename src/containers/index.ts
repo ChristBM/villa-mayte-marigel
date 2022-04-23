@@ -12,3 +12,5 @@ export * from './Main/MainSections/Testimonials/Testimonials'
 export * from './Main/MainSections/Contacts/Contacts'
 
 export * from './MenuMobile/MenuMobile'
+
+export * from './MenuDesktop/MenuDesktop'

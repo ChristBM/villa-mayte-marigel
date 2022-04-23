@@ -10,7 +10,6 @@
   align-items: center;
   gap: 30px;
   background-color: #feebd1;
-  /* background: radial-gradient(circle at -10% 80%, #f6f6f6, #f6f6f5, #f7f5f3, #f8f4ef, #f9f3eb, #faf1e6, #fbf0e1, #fceedc, #fdedd8, #fdecd4, #feebd2, #feebd1); */
   transform: translateY(260px);
   transition: transform 500ms ease-in;
   user-select: none;
@@ -27,4 +26,19 @@
   position: absolute;
   top: 0px;
   transform: rotate(180deg);
+}
+
+@media screen and (min-width: 680px) {
+  .menu_cont {
+    transform: translateY(300px);
+  }
+
+  .up_menu {
+    transform: translateY(10px);
+    transition: transform 400ms ease-out;
+  }
+
+  .separador {
+    transform: rotate(180deg) translateY(-1px);
+  }
 }

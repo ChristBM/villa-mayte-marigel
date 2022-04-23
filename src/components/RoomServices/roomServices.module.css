@@ -1,16 +1,21 @@
 .services {
   display: flex;
   width: 100%;
+  max-width: 1050px;
   height: auto;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .li {
   display: flex;
+  width: 320px;
   max-width: 350px;
+  height: 80px;
+  border: 1px dashed #2E2E2E;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   gap: 10px;

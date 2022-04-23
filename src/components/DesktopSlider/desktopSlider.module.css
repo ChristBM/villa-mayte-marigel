@@ -1,0 +1,31 @@
+.swiper_slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper:hover {
+  opacity: 0.5;
+}
+
+.swiper_slide {
+  background-color: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .swiper {
+    width: 380px;
+    height: 380px;
+  }
+}

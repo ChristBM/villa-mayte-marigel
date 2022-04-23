@@ -1,6 +1,6 @@
 /** @format */
 
-export * from '../containers/Main/MainSections/Activities/Activities'
+export * from './DesktopSlider/DesktopSlider'
 export * from './Favicon/Favicon'
 export * from './HamburgerIcon/HamburgerIcon'
 export * from './HeaderBtn/HeaderBtn'
@@ -24,3 +24,4 @@ export * from './Map/MyMap'
 
 export * from './Whatsapp/Whatsapp'
 export * from './GoUpArrow/GoUpArrow'
+export * from './GoDownArrow/GoDownArrow'

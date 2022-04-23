@@ -1,9 +1,16 @@
 /** @format */
 
-import { useAppSelector } from '@app/hooks'
 import Link from 'next/link'
 import { useRouter, NextRouter } from 'next/router'
+
+import { useAppSelector } from '@app/hooks'
 import styles from './navHeader.module.css'
+import {
+	RiAdminLine,
+	RiCalendarCheckLine,
+	RiGalleryLine,
+	RiHome4Line,
+} from 'react-icons/ri'
 
 export function NavHeader(): JSX.Element {
 	let router: NextRouter = useRouter()
@@ -13,6 +20,9 @@ export function NavHeader(): JSX.Element {
 		<nav className={styles.navheader}>
 			<ul className={styles.navheader__list}>
 				<li className={styles.navheader__li}>
+					<div className={styles.li_icon}>
+						<RiHome4Line color='#2e2e2e8a' size='15px' />
+					</div>
 					<Link
 						href={language.es ? '/' : language.en ? '/en' : language.fr ? '/fr' : '/'}
 					>
@@ -35,6 +45,9 @@ export function NavHeader(): JSX.Element {
 				</li>
 
 				<li className={styles.navheader__li}>
+					<div className={styles.li_icon}>
+						<RiGalleryLine color='#2e2e2e8a' size='15px' />
+					</div>
 					<Link
 						href={
 							language.es
@@ -71,6 +84,9 @@ export function NavHeader(): JSX.Element {
 				</li>
 
 				<li className={styles.navheader__li}>
+					<div className={styles.li_icon}>
+						<RiCalendarCheckLine color='#2e2e2e8a' size='15px' />
+					</div>
 					<Link
 						href={
 							language.es
@@ -107,6 +123,9 @@ export function NavHeader(): JSX.Element {
 				</li>
 
 				<li className={styles.navheader__li}>
+					<div className={styles.li_icon}>
+						<RiAdminLine color='#2e2e2e8a' size='15px' />
+					</div>
 					<Link href={'/login'} passHref>
 						<a href={'/login'} className={styles.ancor}>
 							{language.es && 'Entrar'}
