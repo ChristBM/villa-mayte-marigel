@@ -9,7 +9,7 @@ export function GoDownArrow(): JSX.Element {
 
 	const goDown = () => {
 		window.scroll({
-			top: 7000,
+			top: 8000,
 			behavior: 'smooth',
 		})
 	}
